@@ -69,6 +69,7 @@
 }
 
 .products-item a {
+    gap: toRem(20);
     border: toRem(2) solid $textColor;
     border-radius: toRem(32);
     padding: toRem(30);

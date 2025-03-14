@@ -1,6 +1,7 @@
 .team-section{
     padding: toRem(80) toRem(15);
     background-color:#F5E5D0;
+    color: $textColor;
 
     @media (max-width: 992px) {
         padding: toRem(40) toRem(15);
@@ -30,12 +31,20 @@
             gap: toRem(30);
         }
 
+        @media (max-width: 650px) {
+            margin-bottom: toRem(30);
+        }
+
         .text-block {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 28px;
+            gap: toRem(28);
             flex-grow: 0;
+
+            @media (max-width: 630px) {
+                gap: toRem(8)
+            }
         }
     }
     .team-image {
@@ -58,16 +67,24 @@
     @media (max-width: 750px){
         padding: toRem(20) toRem(40);
     }
-}
 
-.info-title {
-    margin-bottom: toRem(34);
-}
+    .info-title {
+        margin-bottom: toRem(34);
+        text-align: center;
 
-.info-text {
-    margin-bottom: toRem(30);
-}
+        @media (max-width: 556px){
+            margin-bottom: toRem(20);
+        }
+    }
+    
+    .info-text {
+        margin-bottom: toRem(30);
 
+        @media (max-width: 556px){
+            margin-bottom: toRem(20);
+        }
+    }
+}
 
 input,
 textarea {
@@ -79,11 +96,7 @@ textarea {
     overflow-y: auto;
     resize: vertical;
 }
-input[type="number"] {
-    -moz-appearance: textfield; 
-    -webkit-appearance: textfield; 
-    appearance: textfield; 
-}
+
 textarea {
     max-height: toRem(200);
 }

@@ -313,6 +313,7 @@ textarea {
 @media (max-width: 830px) {
   .hero-section .hero-container {
     padding: 2.5rem 0.9375rem;
+    gap: 1rem;
   }
 }
 
@@ -527,6 +528,7 @@ textarea {
 }
 
 .products-item a {
+  gap: 1.25rem;
   border: 0.125rem solid #4B2E28;
   border-radius: 2rem;
   padding: 1.875rem;
@@ -623,6 +625,7 @@ textarea {
 .team-section {
   padding: 5rem 0.9375rem;
   background-color: #F5E5D0;
+  color: #4B2E28;
 }
 @media (max-width: 992px) {
   .team-section {
@@ -662,6 +665,11 @@ textarea {
     gap: 1.875rem;
   }
 }
+@media (max-width: 650px) {
+  .team-section .team-block {
+    margin-bottom: 1.875rem;
+  }
+}
 .team-section .team-block .text-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,10 +681,15 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 28px;
+  gap: 1.75rem;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+}
+@media (max-width: 630px) {
+  .team-section .team-block .text-block {
+    gap: 0.5rem;
+  }
 }
 .team-section .team-image {
   max-width: 100%;
@@ -707,13 +720,22 @@ textarea {
     padding: 1.25rem 2.5rem;
   }
 }
-
-.info-title {
+.team-contact .info-title {
   margin-bottom: 2.125rem;
+  text-align: center;
 }
-
-.info-text {
+@media (max-width: 556px) {
+  .team-contact .info-title {
+    margin-bottom: 1.25rem;
+  }
+}
+.team-contact .info-text {
   margin-bottom: 1.875rem;
+}
+@media (max-width: 556px) {
+  .team-contact .info-text {
+    margin-bottom: 1.25rem;
+  }
 }
 
 input,
@@ -725,12 +747,6 @@ textarea {
   color: #4B2E28;
   overflow-y: auto;
   resize: vertical;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-  appearance: textfield;
 }
 
 textarea {
@@ -816,11 +832,14 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3.875rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
-
+@media (max-width: 888px) {
+  .news-section .news-container {
+    gap: 2rem;
+  }
+}
 .news-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,6 +914,9 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1084px) {
   .news-blocks .stretch-block .news-text,
@@ -923,6 +945,9 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.map-section .info-title {
+  margin-bottom: 2.125rem;
 }
 
 .footer-container {
@@ -998,6 +1023,7 @@ html {
   font-size: 1.875rem;
   line-height: 1;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .info-text {
@@ -1011,6 +1037,7 @@ html {
   font-size: 2.5rem;
   line-height: 1.2;
   text-transform: uppercase;
+  text-align: center;
 }
 
 [class*=button]:not(.burger-button) {
