@@ -1,0 +1,22 @@
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap: toRem(100);
+    height: toRem(80);
+
+    @media (max-width: 430px) {
+        justify-content: space-between;
+        gap: toRem(20);
+
+        .logo {
+            max-width: 50%;
+        }
+    }
+
+    .copyright {
+        color: $textColor;
+        font-weight: 600;
+        font-size: toRem(20);
+    }
+}

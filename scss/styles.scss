@@ -1,0 +1,85 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "header";
+@import "hero-section";
+@import "productions-section";
+@import "team-section";
+@import "news-section";
+@import "map-section";
+@import "footer";
+
+
+html {
+    background-color: #F5D7B5;
+    font-family: "Montserrat", sans-serif;
+    @media (max-width: 1000px) {
+        font-size: 80%;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 75%;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="container"] {
+    max-width: toRem($containerWidth + 30);
+    margin: 0 auto;
+    padding: 0 toRem(15);
+}
+
+.main {
+    margin-top: toRem(80); background-color: #F5D7B5;
+}
+
+.info-title {
+    font-weight: 600;
+    font-size: toRem(30);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-weight: 400;
+    font-size: toRem(20);
+    line-height: 1.4;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: toRem(40);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+[class*="button"]:not(.burger-button) {
+    background-color: $textColor;
+    color: #E6B98A;
+    padding: toRem(16) toRem(30);
+    border-radius: toRem(16);
+    font-weight: 700;
+    font-size: toRem(20);
+    line-height: 1;
+    flex-grow: 0;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #69473f;
+        color: #F5D7B5; 
+        transition: 0.2s;
+    }
+
+    @media (max-width: 486px) {
+        padding: toRem(16) toRem(16);
+    }
+}   
+strong {
+    font-weight: 700;
+}

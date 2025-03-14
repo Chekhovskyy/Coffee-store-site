@@ -1,0 +1,109 @@
+.hero-section {
+    color: $textColor;
+    background-color: #F5D7B5;
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        padding: toRem(80) toRem(15);
+        gap: toRem(44);
+
+        @media (max-width: 830px) {
+            padding: toRem(40) toRem(15);
+        }
+    }
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 830px) {
+        flex-direction: column;
+        align-self: center;
+        gap: toRem(16);
+    }
+
+    .hero-item {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(35);
+        align-items: flex-start;
+
+        &:first-child {
+            max-width: toRem(389);
+
+            @media (max-width: 830px) {
+                max-width: toRem(500);
+            }
+        }
+
+        @media (max-width: 830px) {
+            max-width: toRem(600);
+            min-width: auto;
+            gap: toRem(20);
+        }
+        @media (max-width: 450px) {
+            align-items: center;
+        }
+
+        .title {
+            font-size: toRem(60);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+            @media (max-width: 500px) {
+                font-size: toRem(40);
+        }
+
+        .hero-quote {
+            font-weight: 400;
+            font-size: toRem(26);
+            line-height: 1.4;
+        }
+
+        .hero-image {
+            max-width: 100%;
+        }
+    }
+}
+
+.hero-achievements-list {
+    display: flex;
+    gap: toRem(30);
+
+    @media (max-width: 418px) {
+        gap: toRem(16);
+    }
+
+    .achievement-item {
+        display: flex;
+        gap: toRem(5);
+        flex-direction: column;
+
+        .achievement-numbers {
+            font-weight: 400;
+            font-size: toRem(26);
+        }
+        hr {
+            width: toRem(100);
+            height: toRem(1);
+            background-color: $textColor;
+
+            @media (max-width: 418px) {
+                width: toRem(50);
+            }
+        }
+        .achievment-description {
+            font-weight: 400;
+            font-size: toRem(16);
+        }
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
