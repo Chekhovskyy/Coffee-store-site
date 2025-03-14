@@ -129,6 +129,10 @@ label {
         button.join-button {
             align-self:center;
             color: #F5E5D0;
+
+            :hover {
+                color: #F5E5D0;
+            }
         }
 }
 

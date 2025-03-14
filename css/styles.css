@@ -359,7 +359,7 @@ textarea {
 }
 @media (max-width: 830px) {
   .hero-content .hero-item:first-child {
-    max-width: 31.25rem;
+    max-width: 50rem;
   }
 }
 @media (max-width: 830px) {
@@ -395,18 +395,18 @@ textarea {
   max-width: 100%;
 }
 
-.hero-achievements-list {
+.hero-benefits-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.875rem;
 }
 @media (max-width: 418px) {
-  .hero-achievements-list {
+  .hero-benefits-list {
     gap: 1rem;
   }
 }
-.hero-achievements-list .achievement-item {
+.hero-benefits-list .benefits-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,21 +416,21 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.hero-achievements-list .achievement-item .achievement-numbers {
+.hero-benefits-list .benefits-item .benefits-numbers {
   font-weight: 400;
   font-size: 1.625rem;
 }
-.hero-achievements-list .achievement-item hr {
+.hero-benefits-list .benefits-item hr {
   width: 6.25rem;
   height: 0.0625rem;
   background-color: #4B2E28;
 }
 @media (max-width: 418px) {
-  .hero-achievements-list .achievement-item hr {
+  .hero-benefits-list .benefits-item hr {
     width: 3.125rem;
   }
 }
-.hero-achievements-list .achievement-item .achievment-description {
+.hero-benefits-list .benefits-item .benefits-description {
   font-weight: 400;
   font-size: 1rem;
 }
@@ -808,6 +808,9 @@ label {
       align-self: center;
   color: #F5E5D0;
 }
+.team-form button.join-button :hover {
+  color: #F5E5D0;
+}
 
 .news-section {
   padding: 5rem 0.9375rem;
@@ -1052,10 +1055,12 @@ html {
       -ms-flex-positive: 0;
           flex-grow: 0;
   text-transform: uppercase;
+  border: 0.125rem solid transparent;
 }
 [class*=button]:not(.burger-button):hover {
-  background-color: #69473f;
-  color: #F5D7B5;
+  border-color: #69473f;
+  background-color: #F5D7B5;
+  color: #69473f;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }

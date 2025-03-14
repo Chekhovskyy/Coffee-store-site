@@ -37,7 +37,7 @@
             max-width: toRem(389);
 
             @media (max-width: 830px) {
-                max-width: toRem(500);
+                max-width: toRem(800);
             }
         }
 
@@ -72,7 +72,7 @@
     }
 }
 
-.hero-achievements-list {
+.hero-benefits-list {
     display: flex;
     gap: toRem(30);
 
@@ -80,12 +80,12 @@
         gap: toRem(16);
     }
 
-    .achievement-item {
+    .benefits-item {
         display: flex;
         gap: toRem(5);
         flex-direction: column;
 
-        .achievement-numbers {
+        .benefits-numbers {
             font-weight: 400;
             font-size: toRem(26);
         }
@@ -98,7 +98,7 @@
                 width: toRem(50);
             }
         }
-        .achievment-description {
+        .benefits-description {
             font-weight: 400;
             font-size: toRem(16);
         }

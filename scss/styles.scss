@@ -71,10 +71,12 @@ html {
     line-height: 1;
     flex-grow: 0;
     text-transform: uppercase;
+    border: toRem(2) solid transparent;
 
     &:hover {
-        background-color: #69473f;
-        color: #F5D7B5; 
+        border-color: #69473f;
+        background-color: #F5D7B5;
+        color: #69473f; 
         transition: 0.2s;
     }
 
